@@ -7,6 +7,7 @@ body{
     text-align: center;
     align-items: center;
 }
-table{
-    align-items: center;
+
+table, th, td {
+    border:1px solid black;
 }
