@@ -31,6 +31,20 @@ if(!arma){
                 resultado += "<span class='derrota'> DERROTA: Você falhou miserávelmente. Resoltando em sua morte.</span>"
             }
             break;
+            
+        case "Arqueiro":
+            if(arma.toLowerCase()==="arco" && dado>8){
+                resultado += "<span class='sucesso'> SUCESSO: Sua flecha perfurou o inimigo.</span>"
+            }else if(dado>20){
+                resultado += "<span class='sucesso'> CRÍTICO: A sorte está do seu lado. Poucos arqueiros conseguiram tal façanha </span>"
+            }else{
+                resultado += "<span class='derrota'> DERROTA: Você atirou uma flecha, porém o arco estourou e os estilhaços atingiram seu peito.</span>"
+            }
+            break;
+        
+        default:
+            resultado += "Você paralizou de medo."  
     }
+    log.innerHTML = resultado   
 }
 
