@@ -11,4 +11,10 @@ class heroi{
         // Criando o objeto dinamicamente com os valores dos campos
         const novoHeroi = new heroi(nomeHeroi, classeSelecionada);
 
+        //Exibindo na tela através das propriedades do objeto
+        document.getElementById('resultado').style.display = "block";
+        document.getElementById('dadosHeroi').innerHTML = `
+        Nome: <strong>${novoHeroi.nome}</strong> <br>
+        Classe: <strong>${novoHeroi.classe}</strong>`;
+        
     }
