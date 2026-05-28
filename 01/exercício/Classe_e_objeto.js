@@ -15,16 +15,16 @@ class heroi{
     }
 }
     function criarHeroi(){
-        const nomeHeroi = document.getElementById('nomeInput').valiue;
+        const nomeHeroi = document.getElementById('nomeInput').value;
         const classeSelecionada = document.getElementById('classeSelect').value;
-        const nivelHeroi = document.getElementById('nivelinput').value
+        const nivelHeroi = document.getElementById('nivelInput').value
 
         const novoHeroi = new heroi(nomeHeroi, classeSelecionada, nivelHeroi);
 
         document.getElementById('resultado').style.display = "block";
         document.getElementById('dadosHeroi').innerHTML = `
-        Nome: <strong>${novoHeroi.nome}</strong> <br>
-        Classe: <strong>${novoHeroi.classe}</strong>
-        Nível: <strong>${novoHeroi.nivel}</strong>`;
+        <strong>Nome:</strong> ${novoHeroi.nome} <br>
+        <strong>Classe:</strong> ${novoHeroi.classe} <br>
+        <strong>Nível:</strong> ${novoHeroi.nivel}`;
 
     }
