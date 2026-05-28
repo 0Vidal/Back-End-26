@@ -15,16 +15,20 @@ class heroi{
     }
 }
     function criarHeroi(){
+        // Capturando o que o usuário digitou/selecionou na tela
         const nomeHeroi = document.getElementById('nomeInput').value;
         const classeSelecionada = document.getElementById('classeSelect').value;
+        
+        // Capturando o valor que o usuário digitou no campo de nível
         const nivelHeroi = document.getElementById('nivelInput').value
-
+        
+        // Criando o objeto dinamicamente com os valores dos campos
         const novoHeroi = new heroi(nomeHeroi, classeSelecionada, nivelHeroi);
 
+        //Exibindo na tela através das propriedades do objeto
         document.getElementById('resultado').style.display = "block";
         document.getElementById('dadosHeroi').innerHTML = `
         <strong>Nome:</strong> ${novoHeroi.nome} <br>
         <strong>Classe:</strong> ${novoHeroi.classe} <br>
         <strong>Nível:</strong> ${novoHeroi.nivel}`;
-
     }
