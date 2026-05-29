@@ -22,8 +22,15 @@ function iniciarJogo(){
 monstroBatalha = new Monstro(nome, hp);
 
 function atualizaTela(){
-    document.getElementById('painel-combate')
+    document.getElementById('statusNome').innerHTML = monstroBatalha.nome;
+    document.getElementById('statusHp').innerHTML = `Vida atual: ${monstroBatalha.hp}`;
 }
+document.getElementById('painel-criacao').style.display = "none";
+document.getElementById('painel-combate').style.display = "block";
+atualizaTela();
 
 
+}
+function baterNoMonstro(){
+    
 }
