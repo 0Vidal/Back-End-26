@@ -5,7 +5,7 @@ public class contaScanner {
     }
 
     void sacar(double valor){
-        if (saldo <= valor) {
+        if (valor <= saldo) {
             saldo -= valor;
             System.out.println("Saque de R$ " + valor + "realizado!");
         }else{System.out.println("Saldo insuficiente para o saque de R$ " + valor);}
